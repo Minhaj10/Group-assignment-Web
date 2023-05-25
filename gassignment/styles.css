@@ -1,0 +1,261 @@
+/* style.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+    background-color: #505f5a;
+
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.logo {
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Main Content Styles */
+.intro {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.intro-background {
+  background-image: url('1.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+}
+
+.intro .container {
+  color: #fff;
+}
+
+.intro h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  margin-bottom: 20px;
+}
+
+.cta {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cta-background {
+  background-image: url('2.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+}
+
+.cta .container {
+  color: #fff;
+}
+
+.cta h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cta p {
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #f2f2f2;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+  
+  /* Sections styles */
+  .intro-section,
+  .solutions-section,
+  .services-section,
+  .demo-section,
+  .about-section {
+    margin: 20px;
+  }
+  
+  .cta-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+  
+  .solutions-section ul,
+  .services-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  /* Request Demo form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* About Us styles */
+  .about-section p {
+    margin-bottom: 20px;
+  }
+  
+
+
+  .solution-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+}
+
+.slide {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide-content {
+  margin-top: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+.slide-content h2 {
+    color: #007bff;
+}
+
+.slide-content ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.slide-content ul li:before {
+    content: "\2022"; /* Unicode for bullet symbol */
+    color: #007bff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.slide-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

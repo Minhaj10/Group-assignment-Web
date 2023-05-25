@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consultative Site - Solutions</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+    // JavaScript for slide navigation
+    var slideIndex = 1;
+    showSlide(slideIndex);
+    
+    function changeSlide(n) {
+        showSlide(slideIndex += n);
+    }
+    
+    function showSlide(n) {
+        var slides = document.getElementsByClassName("slide");
+        
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].classList.remove("active");
+        }
+        
+        slides[slideIndex - 1].classList.add("active");
+    }
+</script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+        <div class="logo">Web Solution</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="request_demo.html">Request Demo</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+  <div class="solution-container">
+      <div class="slide active">
+          <div class="slide-content">
+              <h2>Website Design and Development</h2>
+              <p>We offer comprehensive web design and development services to create visually appealing and user-friendly websites. Our team of experts combines artistic design with cutting-edge technology to deliver websites that align with your brand and engage your target audience.</p>
+              <p>Key Features:</p>
+              <ul>
+                  <li>Creative and custom web design</li>
+                  <li>Responsive and mobile-friendly development</li>
+                  <li>User experience optimization</li>
+                  <li>Content management system integration</li>
+              </ul>
+          </div>
+      </div>
+      
+      <div class="slide">
+          <div class="slide-content">
+              <h2>Search Engine Optimization (SEO)</h2>
+              <p>Our SEO services aim to improve your website's visibility and drive organic traffic. We employ industry best practices to optimize your website's structure, content, and keywords, ensuring that your site ranks higher in search engine results.</p>
+              <p>Key Features:</p>
+              <ul>
+                  <li>Keyword research and optimization</li>
+                  <li>On-page and off-page SEO strategies</li>
+                  <li>Technical SEO audits</li>
+                  <li>Link building and backlink analysis</li>
+              </ul>
+          </div>
+      </div>
+      
+      <div class="slide">
+          <div class="slide-content">
+              <h2>Website Performance Optimization</h2>
+              <p>We specialize in optimizing website performance to enhance user experience and conversion rates. Our team conducts thorough performance audits, identifies bottlenecks, and implements strategies to improve page load speed, responsiveness, and overall site performance.</p>
+              <p>Key Features:</p>
+              <ul>
+                  <li>Page speed optimization</li>
+                  <li>Image and file compression</li>
+                  <li>Caching and content delivery network (CDN) setup</li>
+                  <li>Code optimization and minification</li>
+              </ul>
+          </div>
+      </div>
+      
+      <div>
+          <button class="slide-button" onclick="changeSlide(-1)">Prev</button>
+          <button class="slide-button" onclick="changeSlide(1)">Next</button>
+      </div>
+  </div>
+  
+</main>
+
+</footer>
+</body>
+
+</html>
